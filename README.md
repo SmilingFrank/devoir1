@@ -68,7 +68,7 @@ Pour ce faire, vous aurez à créer le Servlet de contrôle du flot de navigatio
 
 *Assurez-vous que [Maven 3](http://maven.apache.org/download.cgi) est installé
 
-*Reliez votre repository Github avec votre compte Heroku en appelant l'URL suivant dans votre navigateur (après avoir modifié l'URL pour y mettre le nom de votre repository de devoir) https://heroku.com/deploy?template=https://github.com/gti525/repo-personnel-NOMGITHUB-SESSION.git. Pour la case de génération de nom d'app, choisissez un nom d'application qui vous rappellera qu'il s'agit de votre devoir 1, et écrivez ce nom dans le haut de ce fichier readme. Attendez la fin du déploiement et cliquez sur le bouton pour voir votre application. L'URL devrait être appelé et vous devriez voir une page HTML avec un lien "Afficher la liste des images".
+*Reliez votre repository Github avec votre compte Heroku en appelant l'URL suivant dans votre navigateur (après avoir modifié l'URL pour y mettre le nom de votre repository de devoir) https://heroku.com/deploy?template=https://github.com/gti525/devoir1-nomUtilisateur.git. Pour la case de génération de nom d'app, choisissez un nom d'application qui vous rappellera qu'il s'agit de votre devoir 1, et écrivez ce nom dans le haut de ce fichier readme. Attendez la fin du déploiement et cliquez sur le bouton pour voir votre application. L'URL devrait être appelé et vous devriez voir une page HTML avec un lien "Afficher la liste des images".
 
 *Dans Heroku, cliquez sur Personal Apps pour aller à vos applications. Cliquez sur l'application nouvellement créee.
 
