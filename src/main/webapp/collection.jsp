@@ -1,4 +1,4 @@
-x#<!-- 
+<!-- 
  *  Devoir AJAX et Java EE, par Eric Boivin
  *  Cette page contient une liste déroulante d'images populée
  *  par un tableau de titres reçu par le servlet. Lors de la 
@@ -51,9 +51,10 @@ x#<!--
 </head>
 <body>
 	<form name="selection">
-		<select name="listeImages"
+		<span>Liste d'images:</span> <br />
+		<select name="listeImages" id="liste"
 			onchange='JavaScript:appelAjax("AjaxServlet")'>
-			<option value=""></option>
+			<option selected disabled>Sélectionner une image</option>
 			<%
 				for (int i = 0; i < listeImages.size(); i++) {
 						Image image = listeImages.get(i);
