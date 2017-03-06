@@ -18,35 +18,18 @@
 <head>
 <title>Démo AJAX - J2EE</title>
 
-<script>
-	function appelAjax(strURL) {
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script>
+        function appelAjax(strURL) {
+            var url = strURL
+                + "?listeImages="
+                + selection.listeImages.options[selection.listeImages.selectedIndex].value;
+            $.ajax({url: url, success: function(result){
+                $('#result')[0].innerHTML = result;
+            }});
+        }
 
-		var xmlHttpReq = false;
-		// Création du conteneur XML pour Mozilla/Safari
-		if (window.XMLHttpRequest) {
-
-			xmlHttpReq = new XMLHttpRequest();
-		}
-		// Création du conteneur XML pour IE
-		else if (window.ActiveXObject) {
-			xmlHttpReq = new ActiveXObject("Microsoft.XMLHTTP");
-		}
-		var url = strURL
-				+ "?listeImages="
-				+ selection.listeImages.options[selection.listeImages.selectedIndex].value;
-		xmlHttpReq.open('GET', url, true);
-		xmlHttpReq.onreadystatechange = function() {
-			if (xmlHttpReq.readyState == 4) {
-				updatepage(xmlHttpReq.responseText);
-			}
-		}
-		xmlHttpReq.send(url);
-	}
-
-	function updatepage(str) {
-		document.getElementById("result").innerHTML = str;
-	}
-</script>
+	</script>
 
 </head>
 <body>
